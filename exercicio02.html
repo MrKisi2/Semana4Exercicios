@@ -1,0 +1,39 @@
+<exercicio02.html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Page title-->
+    <title>Exercício 002</title>
+
+    <script>
+         function troca(){
+           //alert('TROCA')
+           var valor1 = document.getElementById('valor1').value;
+           var valor2 = document.getElementById('valor2').value;
+           document.getElementById('valor1').value = valor2;
+           document.getElementById('valor2').value = valor1;
+         }
+    </script>
+</head>
+
+<body>
+    <div style="margin-top: 50; font-size: 24">
+             EXERCÍCIO 002
+    </div>
+    <div style="margin-top: 50; padding-left: 20; width: 650">                
+        <div style="width: 300; height: 10%">
+            <label for="quantidade">Informe os valores desejadas:<label>
+        </div>                      
+        <div style="width: 300; height: 10%;">
+            <input type="text" name="valor1" id="valor1" value="" style="width: 100; height: 50; font-size: 24; text-align: right; border: 1px solid;">
+            <input type="text" name="valor2" id="valor2" value="" style="width: 100; height: 50; font-size: 24; text-align: right; border: 1px solid;">
+        </div>
+        <div style="height: 10%;">                 
+            <input type="button" value="TROCA"  style="width: 150px; margin: 0 auto; margin-top: 0px; color: #506f85; background-color: #d4dee3;" onClick="troca()" name="troca">
+        </div>
+    </div>
+</body>
+
+</html>
